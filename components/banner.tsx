@@ -7,7 +7,9 @@ const Banner = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-20 ">
       <div className="flex flex-col items-center justify-center gap-4">
-        <Image src={BannerLogo} alt="Banner Logo" width={500} height={500} />
+        <h1 className="font-bold font-heading leading-tighter mb-4 md:text-6xl text-5xl tracking-tighter">
+          Manuel Afonso
+        </h1>
         <p className="text-xl text-white">
           Hello, I’m Manuel Paulo Afonso, a software developer with strong
           attention to detail and a commitment to building high quality,

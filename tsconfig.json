@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "**/*.mts",
+    "app/posts/Hey-Dev-Get-Noticed/page.mdx"
   ],
   "exclude": ["node_modules"]
 }

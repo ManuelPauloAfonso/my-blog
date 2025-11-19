@@ -1,14 +1,10 @@
 import "./globals.css";
 
-import { IBM_Plex_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import Banner from "@/components/banner";
 import type { Metadata } from "next";
-
-const geistSans = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: "normal",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Manuel Afonso",
@@ -18,12 +14,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${geistSans.className} antialiased`}>{children}</body>
+      <body className={` antialiased`}>
+        <div className="max-w-6xl mx-auto px-4 lg:px-0 py-10">
+          <Navbar />
+          <Banner />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

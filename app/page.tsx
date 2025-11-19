@@ -13,11 +13,8 @@ export default async function Home() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 lg:px-0 py-10">
-      <Navbar />
-      <Banner />
       <Featured posts={featured} />
       <RecentPost posts={recent} />
-      <Footer />
     </div>
   );
 }

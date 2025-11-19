@@ -1,0 +1,76 @@
+import PostLayout from "@/components/PostLayout";
+import { Alert } from "@/components/Alert";
+import CodeBlock from "@/components/CodeBlock";
+
+export const post = {
+  title: "Dont Jump to a Framework Without Understanding These Concepts",
+  description:
+    "Before diving into React, Angular, or Vue, it's essential to first master JavaScript fundamentals. Concepts like the DOM, functions, and array methods are what truly prepare you to build with frameworks without getting lost or stuck.  In this post, I'll share my journey of understanding and mastering these core concepts, the lessons I learned, and the ways I've applied them in my career.",
+  author: "Manuel Afonso",
+  postedAt: new Date("2025-01-07T00:00:00Z"),
+};
+
+export const metadata = {
+  title: post.title,
+  description: post.description,
+};
+
+export default (props) => <PostLayout post={post} {...props} />;
+
+# Don’t Jump to a Framework Without Understanding These Concepts
+
+JavaScript, with all its versatility, is one of the most popular and powerful programming languages in the world today. Personally, I feel like it gave me “superpowers” in development but not without challenges.
+
+When I first started, I was eager to solve problems as quickly as possible, which led me to skip some foundational steps. Over time, I realized that understanding JavaScript’s fundamentals goes far beyond quick problem solving.  
+Mastering the basics of JavaScript is crucial, especially when you’re ready to dive into frameworks.
+
+## **So, What is JavaScript?**
+
+According to Mozilla’s documentation, JavaScript is a lightweight, interpreted, and object-oriented programming language with first-class functions.
+Known as the scripting language for web pages, it's also widely used in many non-browser environments.
+
+JavaScript has the flexibility to act as both a procedural and object-oriented language, allowing it to serve a wide range of applications.
+
+## **How Much JavaScript Should You Know Before Using a Framework?**
+
+In the beginning, I often asked myself:
+
+> _“How much JavaScript do I need to know before jumping into a framework?”_
+
+After talking with more experienced developers, the answer became clear:  
+You don’t need to know everything but you must understand some fundamentals very well.
+
+Here are the ones I consider indispensable before using React, Angular, Vue, or any modern framework.
+
+## 1. **Document Object Model (DOM)**
+
+The DOM (Document Object Model) links web pages to scripts.  
+It turns HTML into a structured tree of elements, where each part — like headers, paragraphs, buttons — becomes an object that JavaScript can manipulate.
+
+Understanding the DOM is crucial for: Changing page elements (text, style, HTML),Handling events (click, input, submit),Building dynamic and interactive interfaces
+
+> Without a solid understanding of the DOM, working with frameworks becomes confusing and frustrating.
+
+## 2. **Functions**
+
+Functions are one of the core building blocks of JavaScript.  
+A function is a set of instructions that performs a specific task or returns a value.
+
+Using functions helps: Reuse code efficiently,Keep your work clean and organized,Make the application easier to maintain and scale
+
+Frameworks like React are heavily based on functions, hooks, and composition.
+
+## 3. **Arrays and Their Methods**
+
+Arrays store lists of data — like users, products, messages, or prices.
+
+But what really improves your skills is mastering array methods, such as:
+`.map()` Transform items in a list, `.filter()` | Keep only items that match a condition, `.reduce()` | Accumulate values into a single result, `.find()` | Get a specific item, `.forEach()` | Loop through items
+Knowing these methods helps you handle data effectively , cleanly, and without unnecessary loops skills heavily used in frameworks.
+
+## **Conclusion**
+
+In my opinion, these are the most important concepts for anyone who wants to start working with JavaScript frameworks:DOM, Functions, Arrays and Their Methods, There are many other valuable topics, but these three form the foundation, Understanding them makes transitioning to frameworks much more intuitive and helps you avoid feeling lost or stuck.
+
+> Frameworks don’t replace JavaScript — they extend it.  
+> Learn the language first, and the tools will make much more sense.
