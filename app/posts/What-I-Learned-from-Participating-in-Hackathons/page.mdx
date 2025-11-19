@@ -1,0 +1,16 @@
+import PostLayout from "@/components/PostLayout";
+
+export const post = {
+  title: "Waht I Learned from Participating in Hackathons",
+  description:
+    "A personal journey of how hackathons helped me grow beyond my comfort zone—pushing me to think faster, communicate better, build real solutions under pressure, and discover the true meaning of teamwork, resilience, and passion for problem-solving.  I hope this post inspires you to participate in hackathons and embrace the opportunity to learn and grow from them.",
+  author: "Manuel Afonso",
+  postedAt: new Date("2025-01-07T00:00:00Z"),
+};
+
+export const metadata = {
+  title: post.title,
+  description: post.description,
+};
+
+export default (props) => <PostLayout post={post} {...props} />;

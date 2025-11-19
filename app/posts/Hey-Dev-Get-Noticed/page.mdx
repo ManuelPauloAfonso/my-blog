@@ -1,0 +1,16 @@
+import PostLayout from "@/components/PostLayout";
+
+export const post = {
+  title: "Hey Dev, Get Noticed",
+  description:
+    "Being noticed in the tech world isn't about vanity, but about generating real impact, visibility, and meaningful connections through open source, collaboration, authenticity, and consistent work over time.  In this post, I'll share my journey of how I got noticed in tech, the lessons I learned, and the ways I've applied them in my career.",
+  author: "Manuel Afonso",
+  postedAt: new Date("2025-01-07T00:00:00Z"),
+};
+
+export const metadata = {
+  title: post.title,
+  description: post.description,
+};
+
+export default (props) => <PostLayout post={post} {...props} />;

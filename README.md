@@ -1,5 +1,16 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## My Personal Tech Blog
+
+This is my personal space a blog where I share what I learn, what I build, and what I discover as a developer.
+I used to write on platforms like Medium and other content networks, but I eventually realized something important:
+My knowledge deserves a home, and I wanted to share it with the world.
+I wanted to create a space where I could share my learning journey, my experiences, and my insights with the community.
+I wanted to create a space where I could showcase my skills, my projects, and my passion for technology.
+Here, I have full control.
+Here, I can write freely.
+Here, I can build, document, and grow both as a learner and a developer.
+
 ## Getting Started
 
 First, run the development server:

@@ -1,0 +1,17 @@
+import PostLayout from "@/components/PostLayout";
+
+export const post = {
+  title:
+    "How much easier everything became when I started documenting my projects",
+  description:
+    "Personal reflection on how to document my projects has transformed the way I work, improving clarity, decision-making, learning, collaboration, and long term productivity.  In this post, I'll share my journey of how I started documenting my projects, the lessons I learned, and the ways I've applied them in my career.",
+  author: "Manuel Afonso",
+  postedAt: new Date("2025-01-07T00:00:00Z"),
+};
+
+export const metadata = {
+  title: post.title,
+  description: post.description,
+};
+
+export default (props) => <PostLayout post={post} {...props} />;
