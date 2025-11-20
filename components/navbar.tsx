@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full py-4 mb-6">
-      <nav className="flex flex-wrap items-center justify-between gap-4">
+      <nav className="flex flex-wrap items-center justify-center md:justify-between gap-4">
         <Link href="/" className="flex items-center">
           <span className="font-bold md:text-xl ml-2 rtl:ml-0 rtl:mr-2 self-center text-2xl whitespace-nowrap">
             Manuel Afonso

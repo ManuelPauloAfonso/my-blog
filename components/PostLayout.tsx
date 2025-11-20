@@ -7,7 +7,7 @@ interface PostLayoutProps {
 
 export default function PostLayout({ post, children }: PostLayoutProps) {
   return (
-    <article className="max-w-3xl mx-auto py-10">
+    <article className="max-w-3xl mx-auto md:mt-10 mt-2">
       <header className="mb-8 border-b border-gray-600 pb-6 flex flex-col items-center gap-4">
         <h1 className="text-3xl font-bold mb-2 text-[#FF6B01]  ">
           {post.title}

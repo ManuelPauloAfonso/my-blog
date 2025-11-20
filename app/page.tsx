@@ -12,7 +12,8 @@ export default async function Home() {
   const recent = posts.slice(0, 5);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 lg:px-0 py-10">
+    <div>
+      <Banner />
       <Featured posts={featured} />
       <RecentPost posts={recent} />
     </div>

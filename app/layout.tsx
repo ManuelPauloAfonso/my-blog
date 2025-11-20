@@ -22,7 +22,6 @@ export default function RootLayout({
       <body className={` antialiased`}>
         <div className="max-w-6xl mx-auto px-4 lg:px-0 py-10">
           <Navbar />
-          <Banner />
           {children}
           <Footer />
         </div>

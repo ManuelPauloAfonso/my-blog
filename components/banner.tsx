@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-20 ">
+    <div className="flex flex-col items-center justify-center mt-5 md:mt-20 ">
       <div className="flex flex-col items-center justify-center gap-4">
         <h1 className="font-bold font-heading leading-tighter mb-4 md:text-6xl text-5xl tracking-tighter">
           Manuel Afonso
