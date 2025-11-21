@@ -26,17 +26,17 @@ const Banner = () => {
         <ul className="flex flex-wrap gap-4">
           <li>
             <Link
-              href={"https://github.com/manuel-afonso/astropaper"}
+              href={"https://www.linkedin.com/in/manuelpauloafonso/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white"
+              className="text-white hover:bg-orange-600"
             >
               <LinkedinIcon className="w-6 h-6" />
             </Link>
           </li>
           <li>
             <Link
-              href="https://www.npmjs.com/package/astropaper"
+              href={"https://github.com/manuelPauloAfonso"}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white"
@@ -46,7 +46,7 @@ const Banner = () => {
           </li>
           <li>
             <Link
-              href="https://astropaper.vercel.app/"
+              href="https://x.com/mManuelPauloAf1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white"
