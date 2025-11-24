@@ -13,6 +13,8 @@ export const metadata = {
   description: post.description,
 };
 
+export const revalidate = 60;
+
 export default (props) => <PostLayout post={post} {...props} />;
 
 # My Journey Through Hackathons: Challenges, Growth, and Lessons Learned
