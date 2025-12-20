@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   applicationName: "Manuel Afonso Blog",
   openGraph: {
-    title: "Manuel Afonso  Software Developer & Technical Blog",
+    title: "Manuel Afonso  Software Developer & Technical Blogs",
     description:
       "A space where I share what I learn while building scalable, user focused, and high-quality software  including mistakes, wins, and everything in between.",
     url: baseUrl,
