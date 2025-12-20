@@ -10,7 +10,7 @@ const Banner = () => {
         <h1 className="font-bold font-heading leading-tighter mb-4 sm:text-4xl lg:text-5xl text-3xl text- tracking-tighter ">
           Manuel Afonso
         </h1>
-        <p className="text-base text-white sm:text-lg leading-relaxed">
+        <p className="text-base text-white sm:text-lg leading-relaxed text-justify">
           Hello, I’m Manuel Paulo Afonso, a software developer with strong
           attention to detail and a commitment to building high quality,
           scalable, and user centered solutions. I take great pride in my work
