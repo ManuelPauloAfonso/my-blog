@@ -4,10 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@types/react': 19.2.7
-  '@types/react-dom': 19.2.3
-
 importers:
 
   .:
@@ -19,7 +15,7 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(@types/react@19.2.7)(react@19.2.3)
       '@next/mdx':
-        specifier: 16.1.0
+        specifier: ^16.0.3
         version: 16.1.0(@mdx-js/loader@3.1.1)(@mdx-js/react@3.1.1(@types/react@19.2.7)(react@19.2.3))
       '@types/mdx':
         specifier: ^2.0.13
@@ -50,17 +46,17 @@ importers:
         specifier: ^20
         version: 20.19.27
       '@types/react':
-        specifier: 19.2.7
+        specifier: ^19
         version: 19.2.7
       '@types/react-dom':
-        specifier: 19.2.3
+        specifier: ^19
         version: 19.2.3(@types/react@19.2.7)
       eslint:
         specifier: ^9
         version: 9.39.2(jiti@2.6.1)
       eslint-config-next:
-        specifier: 16.0.10
-        version: 16.0.10(@typescript-eslint/parser@8.50.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+        specifier: 16.0.3
+        version: 16.0.3(@typescript-eslint/parser@8.50.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       tailwindcss:
         specifier: ^4
         version: 4.1.18
@@ -371,7 +367,7 @@ packages:
   '@mdx-js/react@3.1.1':
     resolution: {integrity: sha512-f++rKLQgUVYDAtECQ6fn/is15GkEH9+nZPM3MS0RcxVqoTfawHvDlSCH7JbMhAM6uJ32v3eXLvLmLvjGu7PTQw==}
     peerDependencies:
-      '@types/react': 19.2.7
+      '@types/react': '>=16'
       react: '>=16'
 
   '@napi-rs/wasm-runtime@0.2.12':
@@ -380,8 +376,8 @@ packages:
   '@next/env@16.0.10':
     resolution: {integrity: sha512-8tuaQkyDVgeONQ1MeT9Mkk8pQmZapMKFh5B+OrFUlG3rVmYTXcXlBetBgTurKXGaIZvkoqRT9JL5K3phXcgang==}
 
-  '@next/eslint-plugin-next@16.0.10':
-    resolution: {integrity: sha512-b2NlWN70bbPLmfyoLvvidPKWENBYYIe017ZGUpElvQjDytCWgxPJx7L9juxHt0xHvNVA08ZHJdOyhGzon/KJuw==}
+  '@next/eslint-plugin-next@16.0.3':
+    resolution: {integrity: sha512-6sPWmZetzFWMsz7Dhuxsdmbu3fK+/AxKRtj7OB0/3OZAI2MHB/v2FeYh271LZ9abvnM1WIwWc/5umYjx0jo5sQ==}
 
   '@next/mdx@16.1.0':
     resolution: {integrity: sha512-fnnMzMGIxub01YwZWccdYw/TZmwVf+4g5HZiM8iJvjz4GLNeYc73BPwI5qikPT3aP6xc1s0K5dYBtRojvrAtng==}
@@ -588,7 +584,7 @@ packages:
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
     peerDependencies:
-      '@types/react': 19.2.7
+      '@types/react': ^19.2.0
 
   '@types/react@19.2.7':
     resolution: {integrity: sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==}
@@ -1048,8 +1044,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-next@16.0.10:
-    resolution: {integrity: sha512-BxouZUm0I45K4yjOOIzj24nTi0H2cGo0y7xUmk+Po/PYtJXFBYVDS1BguE7t28efXjKdcN0tmiLivxQy//SsZg==}
+  eslint-config-next@16.0.3:
+    resolution: {integrity: sha512-5F6qDjcZldf0Y0ZbqvWvap9xzYUxyDf7/of37aeyhvkrQokj/4bT1JYWZdlWUr283aeVa+s52mPq9ogmGg+5dw==}
     peerDependencies:
       eslint: '>=9.0.0'
       typescript: '>=3.3.1'
@@ -2639,7 +2635,7 @@ snapshots:
 
   '@next/env@16.0.10': {}
 
-  '@next/eslint-plugin-next@16.0.10':
+  '@next/eslint-plugin-next@16.0.3':
     dependencies:
       fast-glob: 3.3.1
 
@@ -3343,9 +3339,9 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-next@16.0.10(@typescript-eslint/parser@8.50.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3):
+  eslint-config-next@16.0.3(@typescript-eslint/parser@8.50.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3):
     dependencies:
-      '@next/eslint-plugin-next': 16.0.10
+      '@next/eslint-plugin-next': 16.0.3
       eslint: 9.39.2(jiti@2.6.1)
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.2(jiti@2.6.1))
