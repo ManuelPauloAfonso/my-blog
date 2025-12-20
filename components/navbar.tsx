@@ -24,7 +24,7 @@ const Navbar = () => {
           </span>
         </Link>
 
-        <ul className="flex flex-wrap items-center gap-4 text-[16px]">
+        <ul className="flex flex-wrap items-center gap-4 text-base">
           {links.map((link, index) => (
             <li key={link.href + index}>
               <Link href={link.href} className="hover:underline">

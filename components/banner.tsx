@@ -7,10 +7,10 @@ const Banner = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-5 md:mt-20 ">
       <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="font-bold font-heading leading-tighter mb-4 md:text-6xl text-5xl tracking-tighter">
+        <h1 className="font-bold font-heading leading-tighter mb-4 sm:text-4xl lg:text-5xl text-3xl text- tracking-tighter ">
           Manuel Afonso
         </h1>
-        <p className="text-xl text-white">
+        <p className="text-base text-white sm:text-lg leading-relaxed">
           Hello, I’m Manuel Paulo Afonso, a software developer with strong
           attention to detail and a commitment to building high quality,
           scalable, and user centered solutions. I take great pride in my work
