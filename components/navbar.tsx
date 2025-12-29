@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full py-4 mb-6">
+    <header className="w-full p-6 mb-6  sticky top-0 z-50 bg-[#0f172a]/80 backdrop-blur-md shadow-[0_10px_30px_rgba(15,23,42,0.8)] rounded-2xl">
       <nav className="flex flex-wrap items-center justify-center md:justify-between gap-4">
         <Link href="/" className="flex items-center">
           <span className="font-bold md:text-xl ml-2 rtl:ml-0 rtl:mr-2 self-center text-2xl whitespace-nowrap">
