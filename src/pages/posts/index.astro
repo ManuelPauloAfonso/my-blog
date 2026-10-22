@@ -1,0 +1,31 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PostGrid from "@/components/PostGrid";
+import Posts from "@/lib/posts";
+
+const posts = await Posts.findAll();
+---
+
+<Layout
+  title="Archive | Manuel Afonso"
+  description="All articles about software development, clean code, architecture, and the journey of building software."
+>
+  <section class="max-w-3xl">
+    <p class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted">
+      Archive
+    </p>
+    <h1
+      class="mt-4 text-balance text-3xl font-semibold leading-[1.05] tracking-tight sm:text-5xl"
+    >
+      All articles
+    </h1>
+    <p class="mt-5 max-w-xl text-pretty text-sm leading-relaxed text-muted sm:text-base">
+      A collection of notes on software engineering, the craft of writing code,
+      and everything I keep learning along the way.
+    </p>
+  </section>
+
+  <section class="mt-10 sm:mt-14">
+    <PostGrid posts={posts} client:load />
+  </section>
+</Layout>

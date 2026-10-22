@@ -1,0 +1,75 @@
+---
+import "@/styles/globals.css";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = "Manuel Afonso — Software Developer & Tech Writer",
+  description = "Software developer writing about clean code, scalable systems, and the lessons learned along the way.",
+  image = "/assets/icon.png",
+} = Astro.props;
+
+const site = Astro.site ?? new URL("https://www.manuelafonso.tech/");
+const canonical = new URL(Astro.url.pathname, site);
+const imageUrl = new URL(image, site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="software development, clean code, web development, backend development, programming blog, technology articles, typescript, react, node.js, developer journey, coding best practices"
+    />
+    <meta name="application-name" content="Manuel Afonso Blog" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Manuel Afonso" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Manuel Afonso — Software Development Blog" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ManuelAfonso" />
+    <meta name="twitter:creator" content="@ManuelAfonso" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+
+    <script
+      is:inline
+      defer
+      data-website-id="dfid_SCfhMc0Gz1WtV8tz3pTDk"
+      data-domain="https://www.manuelafonso.tech/"
+      src="https://datafa.st/js/script.js"
+      data-allow-localhost="true"
+    ></script>
+  </head>
+  <body>
+    <Navbar />
+    <main
+      class="mx-auto w-full max-w-[1180px] px-5 pb-4 pt-10 sm:px-8 sm:pt-14 lg:px-10"
+    >
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

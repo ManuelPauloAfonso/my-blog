@@ -1,0 +1,30 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PostGrid from "@/components/PostGrid";
+import Posts from "@/lib/posts";
+
+const posts = await Posts.findAll();
+---
+
+<Layout>
+  <section class="max-w-3xl">
+    <p class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted">
+      Journal
+    </p>
+    <h1
+      class="mt-4 text-balance text-3xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
+    >
+      Notes on software, craft &amp; the long game.
+    </h1>
+    <p
+      class="mt-5 max-w-xl text-pretty text-sm leading-relaxed text-muted sm:text-base"
+    >
+      I'm Manuel Afonso, a software developer writing about clean code, scalable
+      systems, and the lessons learned along the way.
+    </p>
+  </section>
+
+  <section class="mt-12 sm:mt-16">
+    <PostGrid posts={posts} client:load />
+  </section>
+</Layout>
