@@ -6,31 +6,31 @@
     "node": "24.x"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "security:next": "npx fix-react2shell-next"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "start": "astro preview",
+    "check": "astro check",
+    "lint": "astro check"
   },
   "dependencies": {
-    "@mdx-js/loader": "^3.1.1",
-    "@mdx-js/react": "^3.1.1",
-    "@next/mdx": "^16.0.3",
-    "@types/mdx": "^2.0.13",
-    "fast-glob": "^3.3.3",
+    "@astrojs/mdx": "^8.1.1",
+    "@astrojs/react": "^7.1.1",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@fontsource/poppins": "^5.3.0",
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.4.2",
     "lucide": "^0.554.0",
     "lucide-react": "^0.554.0",
-    "next": "16.0.10",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@astrojs/check": "^0.9.12",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
