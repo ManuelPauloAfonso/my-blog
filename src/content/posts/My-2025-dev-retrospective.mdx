@@ -1,19 +1,10 @@
-import PostLayout from "@/components/PostLayout";
-
-export const post = {
-  title: "My 2025 Dev Retrospective",
-  description:
-    "A personal and professional retrospective of my 2025, reflecting on work, learnings, people, events, ADHD, and plans for the future..",
-  author: "Manuel Afonso",
-  postedAt: new Date("2025-01-07T00:00:00Z"),
-};
-
-export const metadata = {
-  title: post.title,
-  description: post.description,
-};
-export const revalidate = 60;
-export default (props) => <PostLayout post={post} {...props} />;
+---
+title: "My 2025 Dev Retrospective"
+description: "A personal and professional retrospective of my 2025, reflecting on work, learnings, people, events, ADHD, and plans for the future.."
+author: "Manuel Afonso"
+category: "Career"
+postedAt: 2025-01-07T00:00:00Z
+---
 
 # My 2025 Dev Retrospective
 
