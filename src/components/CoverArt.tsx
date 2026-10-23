@@ -155,13 +155,13 @@ export default function CoverArt({
       />
 
       <span
-        className="absolute left-4 top-4 font-mono text-[9px] uppercase tracking-[0.24em] sm:left-5 sm:top-5 sm:text-[10px]"
+        className="absolute left-4 top-4 font-sans text-[9px] uppercase tracking-[0.24em] sm:left-5 sm:top-5 sm:text-[10px]"
         style={{ color: palette.text }}
       >
         {label}
       </span>
       <span
-        className="absolute bottom-4 right-4 font-mono text-[9px] uppercase tracking-[0.24em] sm:bottom-5 sm:right-5 sm:text-[10px]"
+        className="absolute bottom-4 right-4 font-sans text-[9px] uppercase tracking-[0.24em] sm:bottom-5 sm:right-5 sm:text-[10px]"
         style={{ color: palette.text }}
       >
         {index}

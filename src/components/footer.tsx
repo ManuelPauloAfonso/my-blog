@@ -22,11 +22,11 @@ const Footer = () => {
   return (
     <footer className="mt-20 border-t border-line sm:mt-28">
       <div className="mx-auto flex w-full max-w-[1180px] flex-col gap-5 px-5 py-8 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-8 lg:px-10">
-        <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+        <p className="font-sans text-[10px] uppercase tracking-[0.18em] text-muted">
           © {new Date().getFullYear()} Manuel Afonso
         </p>
 
-        <p className="order-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted sm:order-none">
+        <p className="order-3 font-sans text-[10px] uppercase tracking-[0.18em] text-muted sm:order-none">
           Built with Astro, React &amp; Tailwind
         </p>
 

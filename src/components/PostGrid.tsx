@@ -58,7 +58,7 @@ export default function PostGrid({ posts }: PostGridProps) {
           )}
         </label>
 
-        <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+        <p className="font-sans text-[10px] uppercase tracking-[0.18em] text-muted">
           {filteredPosts.length}{" "}
           {filteredPosts.length === 1 ? "article" : "articles"}
         </p>
@@ -79,7 +79,7 @@ export default function PostGrid({ posts }: PostGridProps) {
               />
 
               <div className="mt-4">
-                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted sm:text-[10px]">
+                <p className="font-sans text-[9px] uppercase tracking-[0.2em] text-muted sm:text-[10px]">
                   {post.category} <span className="mx-1">•</span>{" "}
                   {post.readingTime} min read
                 </p>
@@ -103,7 +103,7 @@ export default function PostGrid({ posts }: PostGridProps) {
           <button
             type="button"
             onClick={() => setQuery("")}
-            className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] underline underline-offset-4"
+            className="mt-4 font-sans text-[10px] uppercase tracking-[0.18em] underline underline-offset-4"
           >
             Clear search
           </button>

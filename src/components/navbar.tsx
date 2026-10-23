@@ -29,7 +29,7 @@ const socials = [
 ];
 
 const navLinkClass =
-  "font-mono text-[10px] uppercase tracking-[0.18em] text-muted transition-colors hover:text-ink sm:text-[11px]";
+  "font-sans text-[10px] uppercase tracking-[0.18em] text-muted transition-colors hover:text-ink sm:text-[11px]";
 
 const NavLinks = () => (
   <ul className="flex items-center gap-5 sm:gap-7">

@@ -28,7 +28,7 @@ export default function PostLayout({
     <article className="mx-auto max-w-5xl">
       <nav
         aria-label="Breadcrumb"
-        className="flex flex-wrap items-center justify-center gap-2 font-mono text-[9px] uppercase tracking-[0.2em] text-muted sm:text-[10px]"
+        className="flex flex-wrap items-center justify-center gap-2 font-sans text-[9px] uppercase tracking-[0.2em] text-muted sm:text-[10px]"
       >
         <a href="/posts" className="transition-colors hover:text-ink">
           Blog
@@ -46,7 +46,7 @@ export default function PostLayout({
           {post.description}
         </p>
 
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-mono text-[9px] uppercase tracking-[0.18em] text-muted sm:text-[10px]">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 font-sans text-[9px] uppercase tracking-[0.18em] text-muted sm:text-[10px]">
           <time dateTime={postedAt.toISOString()}>
             {dateFormatter.format(postedAt)}
           </time>
@@ -89,7 +89,7 @@ export default function PostLayout({
                     />
                   </span>
                   <span className="min-w-0">
-                    <span className="block font-mono text-[9px] uppercase tracking-[0.18em] text-muted">
+                    <span className="block font-sans text-[9px] uppercase tracking-[0.18em] text-muted">
                       Newer article
                     </span>
                     <span className="mt-1 block text-sm font-medium leading-snug group-hover:underline group-hover:underline-offset-4">
@@ -114,7 +114,7 @@ export default function PostLayout({
                     />
                   </span>
                   <span className="min-w-0">
-                    <span className="block font-mono text-[9px] uppercase tracking-[0.18em] text-muted">
+                    <span className="block font-sans text-[9px] uppercase tracking-[0.18em] text-muted">
                       Older article
                     </span>
                     <span className="mt-1 block text-sm font-medium leading-snug group-hover:underline group-hover:underline-offset-4">
